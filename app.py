@@ -304,7 +304,7 @@ with tab1:
             # ---------- Low Usage Buckets ----------
             low_usage_buckets = group[(group['usage_hours'] < 5) & (group['status'] == 'idle') ]
             if not low_usage_buckets.empty:
-                st.markdown("### 🧹 Low-Usage Buckets (Consider cleaning)")
+                st.markdown("### 🧹 Low-Usage Buckets")
                 for idx, row in low_usage_buckets.iterrows():
                     with st.container():
                         st.write(f"**ID:** {row['_id']} | **Bucket:** {row.get('bucket_name', 'N/A')} | **Region:** {row['region']}")
