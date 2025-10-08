@@ -302,7 +302,7 @@ with tab1:
                 st.info("✅ No idle instances found for this service.")
 
             # ---------- Low Usage Buckets ----------
-            low_usage_buckets = group[(group['usage_hours'] < 5) & (group['status'] == 'idle') & (group['service'] == 'S3')]
+            low_usage_buckets = group[(group['usage_hours'] < 5) & (group['status'] == 'idle') ]
             if not low_usage_buckets.empty:
                 st.markdown("### 🧹 Low-Usage Buckets (Consider cleaning)")
                 for idx, row in low_usage_buckets.iterrows():
