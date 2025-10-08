@@ -1,0 +1,21 @@
+# Core dependencies
+pandas
+numpy
+
+# Dashboard and visualization
+streamlit
+plotly
+
+# Forecasting
+prophet
+cmdstanpy
+
+# Database connection
+pymongo
+certifi
+
+# Environment variables
+python-dotenv
+
+# Utility
+python-dateutil
